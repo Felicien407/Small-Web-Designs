@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+:root{
+    --color: #F2C14E;
+    --gameBlocks: #5f7079;
+}
+
+body{
+    background-color: var(--gameBlocks);
+    color: var(--color);
+    font-family: 'Finger Paint', cursive;
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.box {
+    position: absolute;
+    top: 2%;
+    right: 4rem;
+}
+
+form{
+    margin-right: 20%;
+    margin: 13px auto;
+    display: flex;
+}
+input[type="search"] {
+    padding: 6px;
+    width: 12rem;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+    color: var(--color);
+    font-family: 'Finger Paint', cursive;
+    background-color: #ffffff;
+    font-size: 10px;
+}
+
+input[type="search"]:hover{
+    box-shadow: 6px 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"] {
+    padding: 6px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    background: #000000;
+    cursor: pointer;
+    color: var(--color);
+    font-family: 'Finger Paint', cursive;
+    font-weight: 700;
+}
+
+.cars{
+    width: 20%;
+    height: 9rem;
+    position: relative;
+    left: 8%;
+    margin-left: 10px;
+    margin-top: 15px;
+    animation: fadeIn 0.5s ease-in-out; 
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin-right: 20rem;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 18px;
+    border-radius: 20px;
+}
+
+header {
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    position: fixed;
+  }
+
+  header.scrolled {
+    background-color: #f8f8f8;
+  }
+
+  .navbar a:hover {
+    background-color: #f2a65a;
+    color: #fff;
+  }
+
+  footer{
+    background: #2d414b;
+    padding: 20px 30px;
+  }
+
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
